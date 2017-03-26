@@ -1,5 +1,6 @@
+
+env: 
+  - BUILDKITE_NO_COMMAND_EVAL: "true"
 steps:
   - name: ":hammer: Example Script"
-    env:
-      BUILDKITE_NO_COMMAND_EVAL: "true"av
-asdfasdferh rh
+    command: "echo hello"
