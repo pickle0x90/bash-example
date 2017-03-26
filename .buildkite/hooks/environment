@@ -1,0 +1,2 @@
+export BUILDKITE_NO_COMMAND_EVAL=false
+export BUILDKITE_COMMAND_EVAL=true
