@@ -2,6 +2,6 @@ echo "This is an example of a pre-command hook from .buildkite/hooks/pre-command
 echo "adding some env vars"
 export BUILDKITE_NO_COMMAND_EVAL=false
 export BUILDKITE_COMMAND_EVAL=true
-export BUILDKITE_NO_AUTOMATIC_SSH_FINGERPRINT_VERIFICATION=false
+#export BUILDKITE_NO_AUTOMATIC_SSH_FINGERPRINT_VERIFICATION=false
 echo "printing environment vars poop................"
 env
