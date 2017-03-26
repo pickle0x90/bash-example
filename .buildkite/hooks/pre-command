@@ -4,5 +4,4 @@ export BUILDKITE_NO_COMMAND_EVAL=false
 export BUILDKITE_COMMAND_EVAL=true
 export BUILDKITE_NO_AUTOMATIC_SSH_FINGERPRINT_VERIFICATION=false
 export BUILDKITE_AUTO_SSH_FINGERPRINT_VERIFICATION=true
-echo "printing environment vars poop................"
 env
