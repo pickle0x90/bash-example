@@ -1,4 +1,13 @@
 steps:
-  - name: ":hammer: Example Script"
-    command: "script.sh"
-    artifact_paths: "artifacts/*"
+  - label: ':hammer: Tests'
+    env:
+      BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
+      BUILDKITE_NO_COMMAND_EVAL: 1
+
+  - wait
+
+  - label: ':package: Package'
+    command: 'echo "pwnage?"'
+    artifact_paths: 'pkg/*'
+    env:
+      BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
