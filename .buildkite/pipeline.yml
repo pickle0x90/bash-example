@@ -3,11 +3,12 @@ steps:
     env:
       BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
       BUILDKITE_NO_COMMAND_EVAL: 1
+    command: 'echo pwnagefirst'
 
   - wait
 
   - label: ':package: Package'
-    command: 'echo "pwnage?"'
+    command: 'echo pwnage'
     artifact_paths: 'pkg/*'
     env:
       BUILDKITE_DOCKER_COMPOSE_CONTAINER: app
