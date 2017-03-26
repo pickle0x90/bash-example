@@ -1,5 +1,5 @@
 steps:
   - name: ":hammer: Example Script"
-    command: "script.sh"
     env:
-      BUILDKITE_NO_COMMAND_EVAL: "true"
+      BUILDKITE_NO_COMMAND_EVAL: "true"av
+asdfasdferh rh
